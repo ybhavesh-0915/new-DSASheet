@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+
+<body>
+    <section class="sidebar-container" id="sidebarContainer" data-bs-display="false">
+        <div class="sidebar" id="sideBar" dir="rtl">
+            <button type="button" class="cancel-sidebar-btn" onclick="popUp(sidebarContainer)"><i
+                    class="ri-close-large-line"></i></button>
+            <div id="sideBarDetail"></div>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <div class="header">
+            <button class="menubtn" type="button" onclick="popUp(sidebarContainer)"><i class="bi bi-list"></i></button>
+            <div class="filters">
+                <button type="button" class="add-btn" id="addBtn" onclick="popUp(formContainer)"><i
+                        class="ri-add-large-line"></i></button>
+                <select name="select-topics" id="selTopic"> </select>
+
+                <select name="select-level" id="selLevel">
+                    <option value="all">All</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div class="level">
+            <div class="easy-level">
+                <div class="background bg-easy" id="bgEasy"></div>
+                <span>Easy</span>
+                <span><i class="bi bi-hourglass-bottom"></i> 20-30 mins</span>
+            </div>
+            <div class="med-level">
+                <div class="background bg-med" id="bgMed"></div>
+                <span>Medium</span>
+                <span><i class="bi bi-hourglass-bottom"></i> 30-45 mins</span>
+            </div>
+            <div class="diff-level">
+                <div class="background bg-diff" id="bgDiff"></div>
+                <span>Difficult</span>
+                <span><i class="bi bi-hourglass-split"></i> 1+ hours</span>
+            </div>
+        </div>
+        <div class="table-wrapper" id="tableWrapper">
+        </div>
+    </section>
+    <section class="form-container" id="formContainer" data-bs-display="false">
+        <form action="" autocomplete="off">
+            <input type="text" name="topic" id="topicInp" placeholder="Topics">
+            <input type="text" name="question" id="questionInp" placeholder="Question">
+            <select name="level" id="levelInp">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <input type="text" name="link" id="linkInp" placeholder="Practise Links">
+            <textarea name="company" id="companyInp" id="companyInp" placeholder="Company Name" rows="4"></textarea>
+            <div class="form-btn-container">
+                <button type="submit" class="submit-btn" id="submitBtn">Add</button>
+                <button type="reset" class="reset-btn" id="resetBtn" onclick="popUp(formContainer)">Cancel</button>
+            </div>
+        </form>
+    </section>
+    <!-- <section class="exportJson">
+        <pre>
+            <code>
+                sdnakjdasjkh
+            </code>
+        </pre>
+    </section> -->
+    <script src="app.js"></script>
+    <!-- <script type="module" src="updateTable.js"></script> -->
+</body>
+
+</html>
