@@ -1,6 +1,7 @@
 # 📚 DSA Question Sheet maker Web App
 
 A sleek, responsive, and fully client-side web app to manage your DSA (Data Structures & Algorithms) preparation. Add questions, mark them as done, filter by topics or status, and keep your progress saved locally in your browser.
+
 🎯 Try it live:  
 👉 [https://ybhavesh-0915.github.io/new-DSASheet/](https://ybhavesh-0915.github.io/new-DSASheet/)
 
@@ -10,8 +11,11 @@ A sleek, responsive, and fully client-side web app to manage your DSA (Data Stru
 
 - 📋 **Add Custom Questions** with title, topic, and status
 - ✅ **Mark Questions as Done/Not Done**
-- 🔍 **Filter by Status or Topic**
+- 🔍 **Filter by Difficulty Level or Topic**
 - 💾 **Local Storage Persistence** – your data stays even after closing the browser
+- 📊 Progress Tracker for each topic:
+--See how many Easy/Medium/Hard questions are complete
+--Visual indicator of overall topic completion
 - 🧹 **Clear Data** button
 - 🎉 **Confetti Celebration** when all questions are completed
 - 🧠 Clean UI with intuitive UX
